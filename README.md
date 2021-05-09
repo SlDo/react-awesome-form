@@ -5,3 +5,51 @@
         </a>
     </p>
 </div>
+
+## Install
+
+    npm install react-hook-form
+
+## Links
+
+- [Demo](https://codesandbox.io/s/react-awesome-form-controlled-ne0qc?file=/src/App.js)
+
+## Quickstart
+
+```jsx
+import "./styles.css";
+import { useInput } from "react-awesome-form";
+
+export default function App() {
+  const firstName = useInput(true, "", {
+    regExp: /^[a-zA-Zа-яА-Я ,.'-]+$/i,
+    required: true
+  });
+
+  const lastName = useInput(true, "", {
+    regExp: /^[a-zA-Zа-яА-Я ,.'-]+$/i,
+    required: true
+  });
+
+  return (
+    <div className="App">
+      <h1 class="title">React Awesome Form</h1>
+      <form className="form">
+        <label className="label">
+          <input
+            placeholder="Last Name"
+            className="input"
+            type="text"
+            {...lastName.handlers}
+            autoComplete={false}
+          />
+          {lastName.error && <span className="error">Incorrect last name</span>}
+        </label>
+        <button type="submit" className="button">
+          Send
+        </button>
+      </form>
+    </div>
+  );
+}
+```
