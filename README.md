@@ -8,7 +8,7 @@
 
 ## Install
 
-    npm install react-hook-form
+    npm install react-awesome-form
 
 ## Links
 
