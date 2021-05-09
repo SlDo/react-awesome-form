@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea6d44f3-0a6f-451c-815b-936951d04442" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/isEmpty.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/validate.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/.npmignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/validateInitialValue.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useCounter/__tests__/index.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useCounter/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-hook-npm-publish-boilerplate.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,7 @@
       <updated>1620311234547</updated>
       <workItem from="1620311237620" duration="2101000" />
       <workItem from="1620313354198" duration="2934000" />
-      <workItem from="1620594375381" duration="3029000" />
+      <workItem from="1620594375381" duration="3183000" />
     </task>
     <servers />
   </component>
