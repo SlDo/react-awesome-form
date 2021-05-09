@@ -1,7 +1,7 @@
 <div align="center">
     <p align="center">
         <a href="https://codesandbox.io/s/react-awesome-form-controlled-ne0qc?file=/src/App.js" title="React Awesome Form">
-            <img src="https://github.com/SlDo/react-awesome-form/blob/main/img.png" alt="React Awesome Form" />
+            <img src="https://github.com/SlDo/react-awesome-form/img.png" alt="React Awesome Form" />
         </a>
     </p>
 </div>
@@ -53,3 +53,31 @@ export default function App() {
   );
 }
 ```
+
+## API
+
+```typescript
+type InputValue = string | number | null | undefined;
+
+interface InputProps {
+  regExp?: RegExp,
+  required?: boolean
+}
+
+interface IuseInputReturn {
+  resetInput: () => void, 
+  handlers: {
+    onBlur: (e: any) => void, 
+    onInput: (e: any) => void
+  }, 
+  setValue: (value: T) => void, 
+  error: boolean | undefined, 
+  value: () => InputValue
+};
+```
+
+#### function useInput<T>(controlled: boolean, initial: T, options?: InputProps): IuseInputReturn
+
+Main function useInput. The first argument is a boolean type, which declare controlled or uncontrolled function. The second one is a initial state of the input. The third one is a additional options for form.
+
+

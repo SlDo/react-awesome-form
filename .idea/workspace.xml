@@ -13,6 +13,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1sAN3IFm5xKsFyG9DqNSrfpKQ8l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -70,7 +78,7 @@
       <updated>1620311234547</updated>
       <workItem from="1620311237620" duration="2101000" />
       <workItem from="1620313354198" duration="2934000" />
-      <workItem from="1620594375381" duration="3353000" />
+      <workItem from="1620594375381" duration="4283000" />
     </task>
     <servers />
   </component>
