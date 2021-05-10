@@ -78,6 +78,6 @@ interface IuseInputReturn {
 
 #### `function useInput<T>(controlled: boolean, initial: T, options?: InputProps): IuseInputReturn`
 
-Main function **useInput.** The first argument is a **boolean** type (required argument), which declare **controlled or uncontrolled input.** The second one is a **initial state** of the input (required argument). The third one is an **additional options** for form (optional argument).
+Main function **useInput.** The first argument is a **boolean** type (required argument), which declare **controlled or uncontrolled input.** The second one is a **initial state** of the input (required argument). The third one is an **additional option** for form (optional argument).
 
 
