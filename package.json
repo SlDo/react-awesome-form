@@ -1,6 +1,6 @@
 {
-  "name": "react-awesome-input",
-  "version": "0.0.1",
+  "name": "react-awesome-form",
+  "version": "1.0.6",
   "description": "Awesome React Hooks, which allow you to control user entering",
   "author": "sldo",
   "license": "Apache-2.0",

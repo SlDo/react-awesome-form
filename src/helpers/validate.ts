@@ -7,11 +7,11 @@ export interface Validation {
 }
 
 export const validateValue = (input: InputValue, validation: Validation) => {
-	if (validation && (validation.required || validation.regExp)) {
+	if (validation) {
 		return (
-			(validation.required && isEmpty(input)))
-      || (validation.regExp && input && !validation.regExp.test(input.toString())
-      );
+			!(validation.required && isEmpty(input)) &&
+			(input != null && validation?.regExp?.test(input.toString()))
+		);
 	}
 
 	return true;

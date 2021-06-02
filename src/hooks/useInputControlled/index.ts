@@ -6,12 +6,23 @@ export const useInputControlled = <T extends InputValue>(initial: T, options?: I
 	const [input, setInput] = useState<T>(initial as T);
 	const [inputWrong, setInputWrong] = useState<boolean>();
 
+	const validate = (): void => {
+		if (options) {
+			return setInputWrong(!validateValue(input, options));
+		}
+
+		return setInputWrong(false);
+	};
+
 	const handleInput = (e: any) => {
-	  setInputWrong(false);
+	  	setInputWrong(false);
 		setInput(e.target.value);
 	};
 
-	const handleInputBlur = () => (options && validateValue(input, options)) && setInputWrong(true);
+	const handleInputBlur = () => {
+		console.log('blur');
+		validate();
+	};
 
 	const resetInput = () => setInput('' as T);
 
@@ -25,6 +36,7 @@ export const useInputControlled = <T extends InputValue>(initial: T, options?: I
 			onInput: handleInput,
 			onBlur: handleInputBlur
 		},
-		resetInput
+		resetInput,
+		validate
 	};
 };

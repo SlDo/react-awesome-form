@@ -11,7 +11,15 @@ export const useInputUncontrolled = <T extends InputValue>(initial: T, options?:
 		input.current = e.target.value;
 	};
 
-	const handleInputBlur = () => (options && validateValue(input.current, options)) && setInputWrong(true);
+	const validate = (): void => {
+		if (options) {
+			return setInputWrong(!validateValue(input.current, options));
+		}
+
+		return setInputWrong(false);
+	};
+
+	const handleInputBlur = () => validate();
 
 	const resetInput = () => input.current = '';
 
@@ -27,6 +35,7 @@ export const useInputUncontrolled = <T extends InputValue>(initial: T, options?:
 			onInput: handleInput,
 			onBlur: handleInputBlur
 		},
-		resetInput
+		resetInput,
+		validate
 	};
 };
